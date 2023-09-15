@@ -1,0 +1,24 @@
+{
+    "name": "devcontainer-golang",
+    "dockerFile": "Dockerfile",
+    "containerEnv": {
+        "TZ": "Asia/Tokyo"
+    },
+    "runArgs": [
+        "--init"
+    ],
+    "workspaceFolder": "/workspace",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "golang.go",
+                "ms-azuretools.vscode-docker"
+            ],
+            "settings": {
+                "editor.formatOnSave": true,
+                "[go]": {}
+            }
+        }
+    }
+}
