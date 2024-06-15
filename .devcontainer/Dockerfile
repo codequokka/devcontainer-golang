@@ -1,4 +1,4 @@
-FROM golang:1.22.0-bullseye
+FROM golang:1.22.4-bookworm
 
 ARG USER_NAME=vscode
 ARG WORK_DIR=/workspace
